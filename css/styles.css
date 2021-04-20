@@ -9,21 +9,52 @@ body {
 }
 
 .logo {
-    position: absolute;
-    top: 10px;
+    position: fixed;
     left: 50px;
-    bottom: 200px;
     font-size: 4rem;
     font-weight: 700;
     z-index: 20;
+    cursor: pointer;
+    display: inline-block;
+    background: var(--color1);
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 30px;
+    margin: 15px 0;
+    border: 0;
+    font-weight: 600;
   }
+
+  .logo:hover {
+    position: fixed;
+    left: 50px;
+    font-size: 4rem;
+    font-weight: 700;
+    z-index: 20;
+    cursor: pointer;
+    display: inline-block;
+    background: var(--color2);
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 30px;
+    margin: 15px 0;
+    border: 0;
+    font-weight: 600;
+  }
+
+.logo:active {
+    background: var(--color3);
+    background-size: 25px;
+    background-position: center;
+    background-repeat: no-repeat;
+  } 
 
 section {
     height: 500px;
     background-color: white;
 }
 
-.hero {
+.home {
     background-color: #1c1d25;
     height: 100vh;
     color: white;
@@ -55,16 +86,10 @@ li {
     text-decoration: none;
 }
 
-/*
-.menu {
-    margin-right: 10px;
-} */
-
-
 .menu {
     position: fixed;
-    top: 10px;
-    right: 10px;
+    top: 25px;
+    right: 15px;
     width: 60px;
     height: 60px;
     background: var(--color1) url(../images/menu.png);
@@ -73,12 +98,12 @@ li {
     background-repeat: no-repeat;
     z-index: 20;
     cursor: pointer;
-  }
+}
   
 .menu:hover {
     position: fixed;
-    top: 10px;
-    right: 10px;
+    top: 25px;
+    right: 15px;
     width: 60px;
     height: 60px;
     background: var(--color2) url(../images/menu.png);
@@ -151,7 +176,7 @@ p {
     font-weight: 100;
 }
 
-.hero-text {
+.home-text {
     margin-left: 40px;
     margin-bottom: 200px;
 }
@@ -160,7 +185,7 @@ p {
     margin-right: 10px;
     margin-bottom: 200px;
 }
-.hero-area {
+.home-area {
     display: flex;
     /*flex-direction: column;*/
     height: 100%;
@@ -190,9 +215,7 @@ p {
 }
 
 @media (max-width: 800px) {
-    .home-img {
-      display: none;
-    }
+
   
     .logo {
       top: 10px;
@@ -201,9 +224,28 @@ p {
     }
   
     section {
-      padding: 100px 40px;
+      padding: 50px 50px;
     }
   
     .footer {
       padding: 100px 40px;
     }
+}
+
+@media (max-width: 600px) {
+
+  
+    .logo {
+      top: 10px;
+      left: 40px;
+      font-size: 1.5rem;
+    }
+  
+    section {
+      padding: 200px 50px;
+    }
+  
+    .footer {
+      padding: 100px 40px;
+    }
+}
