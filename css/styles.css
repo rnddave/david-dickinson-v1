@@ -3,12 +3,12 @@
     --color2: #343cac;
     --color3: #2e2d2c;
     --section-home: #1c1d25;
-    --section-work: #1c1d29;
-    --section-education: #1c1d33;
-    --section-knowledge: #1c1d38;
-    --section-language: #1c1d41;
-    --section-hobbies: #1c1d45;
-    --section-contact: #1c1d49;
+    --section-work: #ffffff;
+    --section-education: #ffffff;
+    --section-knowledge: #ffffff;
+    --section-language: #ffffff;
+    --section-hobbies: #ffffff;
+    --section-contact: #1c1d25;
   }
 
 body {
@@ -16,7 +16,7 @@ body {
 }
 
 .logo {
-    position: fixed;
+    position: absolute;
     left: 50px;
     font-size: 4rem;
     font-weight: 700;
@@ -33,11 +33,11 @@ body {
   }
 
   .logo:hover {
-    position: fixed;
+    position: absolute;
     left: 50px;
     font-size: 4rem;
     font-weight: 700;
-    z-index: 20;
+    z-index: 40;
     cursor: pointer;
     display: inline-block;
     background: var(--color2);
@@ -65,10 +65,11 @@ section {
     height: 100vh;
     color: white;
     font-size: 2rem ;
+    text-decoration: none;
 }
 
 footer {
-    height: 10px;
+    height: 30px;
     background-color: black;
 }
 
@@ -184,7 +185,7 @@ p {
 
 .home-text {
     margin-left: 40px;
-    margin-bottom: 100px;
+
 }
 
 /*.social {
@@ -198,6 +199,7 @@ p {
     height: 100%;
     justify-content: space-between;
     align-items: center;
+    text-decoration: none;
 }
 
 .btn {
@@ -214,6 +216,7 @@ p {
 
 .btn:hover {
     background: var(--color2);
+    text-decoration: none;
 }
 
 .btn:active {
@@ -223,32 +226,32 @@ p {
 
 .work {
   background: var(--section-work);
-  color: white;
+  color: black;
 }
 
 .education {
   background: var(--section-education);
-  color: white;
+  color: black;
 }
 
 .knowledge {
   background: var(--section-knowledge);
-color: white;
+color: black;
 }
 
 .language {
   background: var(--section-language);
-  color: white;
+  color: black;
 }
 
 .hobbies {
   background: var(--section-hobbies);
-    color: white;
+    color: black;
 }
 
 .portfolio {
   background: var(--section-portfolio);
-  color: white;
+  color: black;
 }
 
 .contact {
@@ -264,6 +267,7 @@ work h3 {
 
 .work-content {
   margin-top: 40px;
+  margin-left: 20px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 40px;
@@ -335,8 +339,19 @@ work h3 {
     font-size: 1.5rem;
   }
 
+  .logo:hover {
+    top: 10px;
+    left: 40px;
+    font-size: 1.5rem;
+    z-index: 20;
+  }
+
   section {
-    padding: 50px 50px;
+    padding: 10px 10px 10px 10px;
+  }
+
+ .home-text {
+    margin-left: 20px;
   }
 
   .footer {
@@ -364,7 +379,11 @@ work h3 {
   }
 
   section {
-    padding: 200px 50px;
+    padding: 10px 10px 10px 10px;
+  }
+
+  .home-text {
+    margin-left: 20px;
   }
 
   .work-content {
