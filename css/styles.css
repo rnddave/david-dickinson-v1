@@ -329,35 +329,53 @@ work h3 {
 @media (max-width: 800px) {
 
   
-    .logo {
-      top: 10px;
-      left: 40px;
-      font-size: 1.5rem;
-    }
-  
-    section {
-      padding: 50px 50px;
-    }
-  
-    .footer {
-      padding: 100px 40px;
-    }
+  .logo {
+    top: 10px;
+    left: 40px;
+    font-size: 1.5rem;
+  }
+
+  section {
+    padding: 50px 50px;
+  }
+
+  .footer {
+    padding: 100px 40px;
+  }
+
+  .work-content {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .social-content {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+
 }
 
 @media (max-width: 600px) {
 
   
-    .logo {
-      top: 10px;
-      left: 40px;
-      font-size: 1.5rem;
-    }
+  .logo {
+    top: 10px;
+    left: 40px;
+    font-size: 1.5rem;
+  }
+
+  section {
+    padding: 200px 50px;
+  }
+
+  .work-content {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .social-content {
+    grid-template-columns: repeat(2, 1fr);
+  }
   
-    section {
-      padding: 200px 50px;
-    }
-  
-    .footer {
-      padding: 100px 40px;
-    }
+  .footer {
+    padding: 100px 40px;
+  }
 }
